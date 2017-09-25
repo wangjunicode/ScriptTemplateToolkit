@@ -64,6 +64,8 @@ namespace Developer.ScriptTemplateToolkit
 
         private void OnGUI()
         {
+            EditorGUILayout.BeginVertical("Window");
+
             EditorGUI.BeginChangeCheck();
             editTarget = (EditTarget)EditorGUILayout.EnumPopup("Edit Target", editTarget);
             if (EditorGUI.EndChangeCheck())
@@ -79,6 +81,8 @@ namespace Developer.ScriptTemplateToolkit
             scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
             templateText = EditorGUILayout.TextArea(templateText, GUILayout.ExpandHeight(true));
             EditorGUILayout.EndScrollView();
+
+            EditorGUILayout.EndVertical();
         }
 
         private void ReadScriptTemplateText()
