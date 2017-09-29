@@ -17,14 +17,14 @@
  *     1.     Mogoson     8/31/2017       0.1.0       Create this file.
  *************************************************************************/
 
+using System;
+using System.IO;
+using System.Text;
+using UnityEditor;
+using UnityEngine;
+
 namespace Developer.ScriptTemplateToolkit
 {
-    using System;
-    using System.IO;
-    using System.Text;
-    using UnityEditor;
-    using UnityEngine;
-
     public class ScriptTemplateEditor : EditorWindow
     {
         #region Enum
