@@ -24,10 +24,10 @@ using UnityEditor;
 
 namespace Developer.ScriptTemplateToolkit
 {
-    public class ScriptTemplateModifier : AssetModificationProcessor
+    public class ScriptTemplateModifier : UnityEditor.AssetModificationProcessor
     {
         #region Property and Field
-        private const string extensions = ".cs|.js|.shader|.compute";
+        private const string extensions = ".cs|.js|.boo|.shader|.compute";
         #endregion
 
         #region Private Method

@@ -1,6 +1,6 @@
 /*************************************************************************
  *  Copyright (C), #COPYRIGHTTIME#, Mogoson Tech. Co., Ltd.
- *  FileName: #SCRIPTNAME#.compute
+ *  FileName: #SCRIPTNAME#.js
  *  Author: Mogoson   Version: 0.1.0   Date: #CREATETIME#
  *  Version Description:
  *    Internal develop version, mainly to achieve its function.
@@ -14,17 +14,20 @@
  *     1.     Mogoson     #CREATETIME#       0.1.0        Create this file.
  *************************************************************************/
 
-// Each #kernel tells which function to compile; you can have many kernels
-#pragma kernel CSMain
+#pragma strict
 
-// Create a RenderTexture with enableRandomWrite flag and set it
-// with cs.SetTexture
-RWTexture2D<float4> Result;
+//@script RequireComponent()
+//@script AddComponentMenu ("")
 
-[numthreads(8,8,1)]
-void CSMain (uint3 id : SV_DispatchThreadID)
+//@Tooltip("")
+//@SerializeField
+
+function Start () 
 {
-    // TODO: insert actual code here!
 
-    Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}
+
+function Update () 
+{
+
 }

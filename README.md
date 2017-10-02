@@ -15,14 +15,14 @@
 
 ## Prerequisite
 - In fact, the script templates store under the Unity editor install path,
-  example "Unity 5.4.1f1\Editor\Data\Resources\ScriptTemplates".
+  example "Unity 5.0.0f4\Editor\Data\Resources\ScriptTemplates".
 - Unity provide the API(OnWillCreateAsset method of the AssetModificationProcessor class)
   to capture the event of user create asset(include script) in Unity editor.
 
 ## Scheme
 ### Edit
 - Create our own editor code, inherit from EditorWindow class to draw our editor UI,
-  and use our editor to edit/save Unity script templates.
+  and use our editor to Edit/Save Unity script templates.
 - Define mark string, "#CREATETIME#" mark create time of script and "#COPYRIGHTTIME#"
   mark copyright time of code.
 - Create your style script templates.

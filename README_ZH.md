@@ -13,7 +13,7 @@
 - .Net Framework 3.0 或更高版本。
 
 ## 条件
-- 实际上，Unity3D将各类脚本文件模板放在了安装目录下（例如：Unity 5.4.1f1\Editor\Data\Resources\ScriptTemplates）。
+- 实际上，Unity3D将各类脚本文件模板放在了安装目录下（例如：Unity 5.0.0f4\Editor\Data\Resources\ScriptTemplates）。
 - 在Unity3D提供的API中，可以通过AssetModificationProcessor类的OnWillCreateAsset方法捕获Unity3D编辑器创建Asset（包括脚本文件）事件。
 
 ## 方案

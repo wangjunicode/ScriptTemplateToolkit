@@ -26,17 +26,17 @@
     bar and click it or press key combination Alt+S to open the editor
     window.
 
-    Select "EditTarget"(example CSharp Behaviour) to browse current script
-    template.
+    Select "Type"(example C# Script) to load the script template text to
+    the "Text" area.
 
-    Open the corresponding [Template] and copy the text to "ScriptTemplate"
-    text edit area and click the "Save" button.
+    Reference the [Template], edit the script template to apply your
+    style in the "Text" area and click the "Save" button.
 
-    "ScriptTemplateModifier" will be work when a script(example C# Script)
+    ScriptTemplateModifier will be work when a script(example C# Script)
     is created in Unity editor.
 --------------------------------------------------------------------------
   [Template]
-    Templates(example CsharpBehaviour.txt) in the path
+    Templates(example C#Script.txt) in the path
     "ScriptTemplateToolkit/Templates" provide reference to you.
 
     In fact, you can use the [Mark] to create your style script template.
