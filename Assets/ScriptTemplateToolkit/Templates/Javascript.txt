@@ -1,17 +1,13 @@
 /*************************************************************************
  *  Copyright (C), #COPYRIGHTTIME#, Mogoson Tech. Co., Ltd.
- *  FileName: #SCRIPTNAME#.js
- *  Author: Mogoson   Version: 0.1.0   Date: #CREATETIME#
- *  Version Description:
- *    Internal develop version, mainly to achieve its function.
- *  File Description:
- *    Ignore.
- *  Function List:
- *    <ID>     <name>             <description>
- *     1.
- *  History:
- *    <ID>    <author>      <time>      <version>      <description>
- *     1.     Mogoson     #CREATETIME#       0.1.0        Create this file.
+ *------------------------------------------------------------------------
+ *  File         :  #SCRIPTNAME#.js
+ *  Description  :  Null.
+ *------------------------------------------------------------------------
+ *  Author       :  Mogoson
+ *  Version      :  0.1.0
+ *  Date         :  #CREATETIME#
+ *  Description  :  Initial development version.
  *************************************************************************/
 
 #pragma strict
