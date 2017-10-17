@@ -15,8 +15,8 @@ using System.Collections;
 
 namespace Developer.Script
 {
-    //[RequireComponent(typeof())]
     //[AddComponentMenu("")]
+    //[RequireComponent(typeof())]
     public class #SCRIPTNAME# : MonoBehaviour
     {
         #region Property and Field

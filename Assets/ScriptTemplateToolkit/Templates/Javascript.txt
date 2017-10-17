@@ -12,8 +12,8 @@
 
 #pragma strict
 
-//@script RequireComponent()
 //@script AddComponentMenu ("")
+//@script RequireComponent()
 
 //@Tooltip("")
 //@SerializeField
