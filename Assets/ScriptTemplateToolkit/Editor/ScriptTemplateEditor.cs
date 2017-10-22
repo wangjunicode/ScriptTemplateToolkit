@@ -42,7 +42,7 @@ namespace Developer.ScriptTemplateToolkit
 
         private void OnEnable()
         {
-            LoadScriptTemplateFiles();
+            FindScriptTemplateFiles();
             ReadScriptTemplateText();
         }
 
@@ -72,7 +72,7 @@ namespace Developer.ScriptTemplateToolkit
             EditorGUILayout.EndVertical();
         }
 
-        private void LoadScriptTemplateFiles()
+        private void FindScriptTemplateFiles()
         {
             try
             {
