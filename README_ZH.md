@@ -38,11 +38,7 @@
 ## 图示
 - ScriptTemplateEditor
 
-![ScriptTemplateEditor](./Attachments/ScriptTemplateEditor.png)
-
-- TestScript
-
-![TestScript](./Attachments/TestScript.png)
+![ScriptTemplateEditor](./Attachments/ScriptTemplateEditor.gif)
 
 ## 联系
 - 如果你有任何问题或者建议，欢迎通过mogoson@qq.com联系我。
