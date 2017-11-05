@@ -35,7 +35,7 @@
 ### 脚本模板示例
 - “ScriptTemplateToolkit/Templates” 目录存放各类脚本模板文件的示例，以供读者编写自己风格的模板时参考。
 
-## 图示
+## 预览
 - ScriptTemplateEditor
 
 ![ScriptTemplateEditor](./Attachments/ScriptTemplateEditor.gif)
