@@ -26,7 +26,7 @@ namespace Developer.ScriptTemplateToolkit
         private const float scrollViewHeight = 95;
         private Vector2 scrollPosition = Vector2.zero;
 
-        private string templatesDirectory { get { return EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates"; } }
+        private string TemplatesDirectory { get { return EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates"; } }
         private string[] templateFiles = { string.Empty };
         private string templateText = string.Empty;
         private int templateIndex = 0;
@@ -74,18 +74,21 @@ namespace Developer.ScriptTemplateToolkit
 
         private void FindScriptTemplateFiles()
         {
+            var searchFiles = new string[] { };
             try
             {
-                var searchFiles = Directory.GetFiles(templatesDirectory, "*.txt", SearchOption.AllDirectories);
-                templateFiles = new string[searchFiles.Length];
-                for (int i = 0; i < templateFiles.Length; i++)
-                {
-                    templateFiles[i] = Path.GetFileNameWithoutExtension(searchFiles[i]);
-                }
+                searchFiles = Directory.GetFiles(TemplatesDirectory, "*.txt", SearchOption.AllDirectories);
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
+                return;
+            }
+
+            templateFiles = new string[searchFiles.Length];
+            for (int i = 0; i < templateFiles.Length; i++)
+            {
+                templateFiles[i] = Path.GetFileNameWithoutExtension(searchFiles[i]);
             }
         }
 
@@ -107,17 +110,19 @@ namespace Developer.ScriptTemplateToolkit
             try
             {
                 File.WriteAllText(GetScriptTemplatePath(), templateText, Encoding.Default);
-                ShowNotification(new GUIContent("The script template was saved successfully!"));
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
+                return;
             }
+
+            ShowNotification(new GUIContent("The script template was saved successfully!"));
         }
 
         private string GetScriptTemplatePath()
         {
-            return templatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
+            return TemplatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
         }
 
         private void RevertScrollPosition()
