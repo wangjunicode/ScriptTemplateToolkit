@@ -7,7 +7,7 @@
 ## Demand
 - Quickly edit/save Unity editor script templates.
 - Auto insert file header comments into the new script.
-- Auto mark create time and copyright time.
+- Auto mark create date and copyright year.
 
 ## Environment
 - Unity 5.0 or above.
@@ -23,8 +23,8 @@
 ### Edit
 - Create our own editor code, inherit from EditorWindow class to draw our editor UI,
   and use our editor to Edit/Save Unity script templates.
-- Define mark string, "#CREATETIME#" mark create time of script and "#COPYRIGHTTIME#"
-  mark copyright time of code.
+- Define mark string, "#CREATEDATE#" mark create date of script and "#COPYRIGHTYEAR#"
+  mark copyright year of code.
 - Create your style script templates.
 
 ### Create
@@ -32,8 +32,8 @@
   corresponding template to the new file.
 - Create our own extend editor code, inherit from AssetModificationProcessor class and
   achieve the OnWillCreateAsset(string assetPath) method to capture the event of create
-  asset(include script), read the new script text and replace the "#CREATETIME#" to current
-  date time and replace the "#COPYRIGHTTIME#" to this year-next year.
+  asset(include script), read the new script text and replace the "#CREATEDATE#" to current
+  date and replace the "#COPYRIGHTYEAR#" to current year.
 
 ## Achieve
 ### Editor
@@ -44,6 +44,8 @@
 ### Template
 - Templates in the path "ScriptTemplateToolkit/Templates" provide reference to you to create
   your style script templates.
+
+- The format of copyright statement in the templates reference from the [U.S. Copyright Office](https://www.copyright.gov/).
 
 ## Preview
 - ScriptTemplateEditor.

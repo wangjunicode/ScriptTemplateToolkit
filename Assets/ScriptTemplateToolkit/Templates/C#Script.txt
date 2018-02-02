@@ -1,12 +1,12 @@
 ﻿/*************************************************************************
- *  Copyright (C), #COPYRIGHTTIME#, Mogoson Tech. Co., Ltd.
+ *  Copyright #COPYRIGHTYEAR# Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  #SCRIPTNAME#.cs
  *  Description  :  Null.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  0.1.0
- *  Date         :  #CREATETIME#
+ *  Date         :  #CREATEDATE#
  *  Description  :  Initial development version.
  *************************************************************************/
 

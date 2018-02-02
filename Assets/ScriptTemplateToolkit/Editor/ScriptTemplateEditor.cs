@@ -1,12 +1,12 @@
-/*************************************************************************
- *  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
+﻿/*************************************************************************
+ *  Copyright 2017-2018 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  ScriptTemplateEditor.cs
  *  Description  :  Editor for script template.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  0.1.0
- *  Date         :  8/31/2017
+ *  Date         :  2/3/2018
  *  Description  :  Initial development version.
  *************************************************************************/
 
@@ -117,7 +117,7 @@ namespace Developer.ScriptTemplateToolkit
                 return;
             }
 
-            ShowNotification(new GUIContent("The script template was saved successfully!"));
+            ShowNotification(new GUIContent("The script template is saved!"));
         }
 
         private string GetScriptTemplatePath()

@@ -1,12 +1,12 @@
 /*************************************************************************
- *  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
+ *  Copyright 2017-2018 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  ScriptTemplateModifier.cs
  *  Description  :  Modifier for script template.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  0.1.0
- *  Date         :  8/31/2017
+ *  Date         :  2/3/2018
  *  Description  :  Initial development version.
  *************************************************************************/
 
@@ -30,8 +30,8 @@ namespace Developer.ScriptTemplateToolkit
             if (Regex.IsMatch(Path.GetExtension(assetPath), extensions))
             {
                 var content = File.ReadAllText(assetPath);
-                content = content.Replace("#COPYRIGHTTIME#", DateTime.Now.Year + "-" + (DateTime.Now.Year + 1));
-                content = content.Replace("#CREATETIME#", DateTime.Now.ToShortDateString());
+                content = content.Replace("#COPYRIGHTYEAR#", DateTime.Now.Year.ToString());
+                content = content.Replace("#CREATEDATE#", DateTime.Now.ToShortDateString());
                 File.WriteAllText(assetPath, content);
                 AssetDatabase.Refresh();
             }

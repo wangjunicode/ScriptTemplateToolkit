@@ -1,7 +1,7 @@
 ==========================================================================
-  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
+  Copyright 2017-2018 Mogoson. All rights reserved.
   Name: ScriptTemplateToolkit
-  Author: Mogoson   Version: 0.1.0   Date: 8/31/2017
+  Author: Mogoson   Version: 0.1.0   Date: 2/3/2018
 ==========================================================================
   [Summary]
     Unity plugin for script template.
@@ -42,7 +42,7 @@
     In fact, you can use the [Mark] to create your style script template.
 --------------------------------------------------------------------------
   [Mark]
-    #SCRIPTNAME#, #COPYRIGHTTIME#, #CREATETIME#.
+    #SCRIPTNAME#, #COPYRIGHTYEAR#, #CREATEDATE#.
 --------------------------------------------------------------------------
   [Resource]
     https://github.com/mogoson/ScriptTemplateToolkit.
