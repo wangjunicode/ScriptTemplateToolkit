@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright #COPYRIGHTYEAR# Mogoson. All rights reserved.
+ *  Copyright #COPYRIGHTYEAR# Mogoson All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  #SCRIPTNAME#.js
  *  Description  :  Null.

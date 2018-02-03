@@ -1,5 +1,5 @@
 /*************************************************************************
- *  Copyright 2017-2018 Mogoson. All rights reserved.
+ *  Copyright 2017-2018 Mogoson All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  ScriptTemplateModifier.cs
  *  Description  :  Modifier for script template.

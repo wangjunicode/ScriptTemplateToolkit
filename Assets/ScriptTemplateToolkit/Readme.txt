@@ -1,5 +1,5 @@
 ==========================================================================
-  Copyright 2017-2018 Mogoson. All rights reserved.
+  Copyright 2017-2018 Mogoson All rights reserved.
   Name: ScriptTemplateToolkit
   Author: Mogoson   Version: 0.1.0   Date: 2/3/2018
 ==========================================================================
