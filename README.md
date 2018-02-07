@@ -5,7 +5,7 @@
 - Toolkit for Unity editor script templates. 
 
 ## Demand
-- Quickly edit/save Unity editor script templates.
+- Quickly Edit/Save Unity editor script templates.
 - Auto insert file header comments into the new script.
 - Auto mark create date and copyright year.
 
@@ -21,17 +21,17 @@
 
 ## Scheme
 ### Edit
-- Create our own editor code, inherit from EditorWindow class to draw our editor UI,
+- Create editor code, inherit from EditorWindow class to draw our editor UI,
   and use our editor to Edit/Save Unity script templates.
 - Define mark string, "#CREATEDATE#" mark create date of script and "#COPYRIGHTYEAR#"
   mark copyright year of code.
-- Create your style script templates.
+- Create our style script templates.
 
 ### Create
 - When you create a script file in Unity editor Project, Unity engine will copy the
   corresponding template to the new file.
-- Create our own extend editor code, inherit from AssetModificationProcessor class and
-  achieve the OnWillCreateAsset(string assetPath) method to capture the event of create
+- Create our editor code, inherit from AssetModificationProcessor class and achieve
+  the OnWillCreateAsset(string assetPath) method to capture the event of create
   asset(include script), read the new script text and replace the "#CREATEDATE#" to current
   date and replace the "#COPYRIGHTYEAR#" to current year.
 
