@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright #COPYRIGHTYEAR# Mogoson All rights reserved.
+ *  Copyright © #COPYRIGHTYEAR# Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  #SCRIPTNAME#.js
  *  Description  :  Null.
@@ -18,12 +18,12 @@
 //@Tooltip("")
 //@SerializeField
 
-function Start () 
+function Start()
 {
 
 }
 
-function Update () 
+function Update()
 {
 
 }

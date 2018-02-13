@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright #COPYRIGHTYEAR# Mogoson All rights reserved.
+ *  Copyright © #COPYRIGHTYEAR# Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  #SCRIPTNAME#.cs
  *  Description  :  Null.
@@ -25,14 +25,14 @@ namespace Developer.Script
         #endregion
 
         #region Private Method
-        // Use this for initialization
-        void Start () 
+        // Use this for initialization.
+        void Start()
         {
 
         }
-	
-        // Update is called once per frame
-        void Update () 
+
+        // Update is called once per frame.
+        void Update()
         {
 
         }

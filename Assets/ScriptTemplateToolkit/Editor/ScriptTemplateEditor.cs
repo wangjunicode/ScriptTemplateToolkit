@@ -1,18 +1,17 @@
 ﻿/*************************************************************************
- *  Copyright 2017-2018 Mogoson All rights reserved.
+ *  Copyright © 2017-2018 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  ScriptTemplateEditor.cs
  *  Description  :  Editor for script template.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  0.1.0
- *  Date         :  2/3/2018
+ *  Date         :  2/12/2018
  *  Description  :  Initial development version.
  *************************************************************************/
 
 using System;
 using System.IO;
-using System.Text;
 using UnityEditor;
 using UnityEngine;
 
@@ -27,7 +26,7 @@ namespace Developer.ScriptTemplateToolkit
         private Vector2 scrollPosition = Vector2.zero;
 
         private string TemplatesDirectory { get { return EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates"; } }
-        private string[] templateFiles = { string.Empty };
+        private string[] templateFiles = { };
         private string templateText = string.Empty;
         private int templateIndex = 0;
         #endregion
@@ -96,7 +95,7 @@ namespace Developer.ScriptTemplateToolkit
         {
             try
             {
-                templateText = File.ReadAllText(GetScriptTemplatePath(), Encoding.Default);
+                templateText = File.ReadAllText(GetScriptTemplatePath());
             }
             catch (Exception e)
             {
@@ -109,7 +108,7 @@ namespace Developer.ScriptTemplateToolkit
         {
             try
             {
-                File.WriteAllText(GetScriptTemplatePath(), templateText, Encoding.Default);
+                File.WriteAllText(GetScriptTemplatePath(), templateText);
             }
             catch (Exception e)
             {
