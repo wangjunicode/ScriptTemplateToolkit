@@ -25,7 +25,7 @@ namespace Developer.ScriptTemplateToolkit
         private const float scrollViewHeight = 95;
         private Vector2 scrollPosition = Vector2.zero;
 
-        private string TemplatesDirectory { get { return EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates"; } }
+        private readonly string TemplatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
         private string[] templateFiles = { };
         private string templateText = string.Empty;
         private int templateIndex = 0;
