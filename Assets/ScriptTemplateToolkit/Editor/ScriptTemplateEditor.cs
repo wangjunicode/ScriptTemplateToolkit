@@ -25,7 +25,7 @@ namespace Developer.ScriptTemplateToolkit
         private const float scrollViewHeight = 95;
         private Vector2 scrollPosition = Vector2.zero;
 
-        private readonly string TemplatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
+        private readonly string templatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
         private string[] templateFiles = { };
         private string templateText = string.Empty;
         private int templateIndex = 0;
@@ -76,7 +76,7 @@ namespace Developer.ScriptTemplateToolkit
             var searchFiles = new string[] { };
             try
             {
-                searchFiles = Directory.GetFiles(TemplatesDirectory, "*.txt", SearchOption.AllDirectories);
+                searchFiles = Directory.GetFiles(templatesDirectory, "*.txt", SearchOption.AllDirectories);
             }
             catch (Exception e)
             {
@@ -121,7 +121,7 @@ namespace Developer.ScriptTemplateToolkit
 
         private string GetScriptTemplatePath()
         {
-            return TemplatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
+            return templatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
         }
 
         private void RevertScrollPosition()
