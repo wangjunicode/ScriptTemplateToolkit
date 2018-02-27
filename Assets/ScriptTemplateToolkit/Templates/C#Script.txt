@@ -19,7 +19,7 @@ namespace Developer.Script
     //[RequireComponent(typeof())]
     public class #SCRIPTNAME# : MonoBehaviour
     {
-        #region Property and Field
+        #region Field and Property
         //  [Tooltip("")]
         //  [SerializeField]
         #endregion

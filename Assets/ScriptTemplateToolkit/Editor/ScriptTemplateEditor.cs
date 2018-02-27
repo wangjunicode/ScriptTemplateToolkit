@@ -19,7 +19,7 @@ namespace Developer.ScriptTemplateToolkit
 {
     public class ScriptTemplateEditor : EditorWindow
     {
-        #region Property and Field
+        #region Field and Property
         private static ScriptTemplateEditor instance;
         private const float buttonWidth = 60;
         private const float scrollViewHeight = 95;
@@ -109,14 +109,12 @@ namespace Developer.ScriptTemplateToolkit
             try
             {
                 File.WriteAllText(GetScriptTemplatePath(), templateText);
+                ShowNotification(new GUIContent("The script template is saved!"));
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
-                return;
             }
-
-            ShowNotification(new GUIContent("The script template is saved!"));
         }
 
         private string GetScriptTemplatePath()

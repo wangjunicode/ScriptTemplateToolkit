@@ -20,7 +20,7 @@ namespace Developer.ScriptTemplateToolkit
 {
     public class ScriptTemplateModifier : UnityEditor.AssetModificationProcessor
     {
-        #region Property and Field
+        #region Field and Property
         private const string extensions = ".cs$|.js$|.boo$|.shader$|.compute$";
         #endregion
 
