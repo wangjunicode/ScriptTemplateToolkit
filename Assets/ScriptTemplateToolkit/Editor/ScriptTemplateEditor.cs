@@ -21,8 +21,8 @@ namespace Developer.ScriptTemplateToolkit
     {
         #region Field and Property
         private static ScriptTemplateEditor instance;
-        private const float buttonWidth = 60;
-        private const float scrollViewHeight = 95;
+        private const float ButtonWidth = 60;
+        private const float ScrollViewHeight = 95;
         private Vector2 scrollPosition = Vector2.zero;
 
         private readonly string templatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
@@ -60,7 +60,7 @@ namespace Developer.ScriptTemplateToolkit
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Text");
             EditorGUILayout.Space();
-            if (GUILayout.Button("Save", GUILayout.Width(buttonWidth)))
+            if (GUILayout.Button("Save", GUILayout.Width(ButtonWidth)))
                 SaveScriptTemplate();
             EditorGUILayout.EndHorizontal();
 
