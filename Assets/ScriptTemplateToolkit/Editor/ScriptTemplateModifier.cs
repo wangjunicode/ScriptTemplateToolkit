@@ -21,14 +21,14 @@ namespace Developer.ScriptTemplateToolkit
     public class ScriptTemplateModifier : UnityEditor.AssetModificationProcessor
     {
         #region Field and Property
-        private const string extensions = ".cs$|.js$|.boo$|.shader$|.compute$";
+        private const string Extensions = ".cs$|.js$|.boo$|.shader$|.compute$";
         #endregion
 
         #region Private Method
         private static void OnWillCreateAsset(string metaPath)
         {
             var assetPath = metaPath.Replace(".meta", string.Empty);
-            if (Regex.IsMatch(Path.GetExtension(assetPath), extensions))
+            if (Regex.IsMatch(Path.GetExtension(assetPath), Extensions))
             {
                 try
                 {

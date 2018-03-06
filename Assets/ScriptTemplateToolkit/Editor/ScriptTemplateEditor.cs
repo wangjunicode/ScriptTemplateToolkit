@@ -109,12 +109,14 @@ namespace Developer.ScriptTemplateToolkit
             try
             {
                 File.WriteAllText(GetScriptTemplatePath(), templateText);
-                ShowNotification(new GUIContent("The script template is saved!"));
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
+                return;
             }
+
+            ShowNotification(new GUIContent("The script template is saved!"));
         }
 
         private string GetScriptTemplatePath()
