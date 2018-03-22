@@ -15,7 +15,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Developer.ScriptTemplateToolkit
+namespace Mogoson.ScriptTemplateToolkit
 {
     public class ScriptTemplateEditor : EditorWindow
     {
@@ -73,21 +73,18 @@ namespace Developer.ScriptTemplateToolkit
 
         private void FindScriptTemplateFiles()
         {
-            var searchFiles = new string[] { };
             try
             {
-                searchFiles = Directory.GetFiles(templatesDirectory, "*.txt", SearchOption.AllDirectories);
+                var searchFiles = Directory.GetFiles(templatesDirectory, "*.txt", SearchOption.AllDirectories);
+                templateFiles = new string[searchFiles.Length];
+                for (int i = 0; i < templateFiles.Length; i++)
+                {
+                    templateFiles[i] = Path.GetFileNameWithoutExtension(searchFiles[i]);
+                }
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
-                return;
-            }
-
-            templateFiles = new string[searchFiles.Length];
-            for (int i = 0; i < templateFiles.Length; i++)
-            {
-                templateFiles[i] = Path.GetFileNameWithoutExtension(searchFiles[i]);
             }
         }
 
@@ -109,14 +106,12 @@ namespace Developer.ScriptTemplateToolkit
             try
             {
                 File.WriteAllText(GetScriptTemplatePath(), templateText);
+                ShowNotification(new GUIContent("The script template is saved."));
             }
             catch (Exception e)
             {
                 ShowNotification(new GUIContent(e.Message));
-                return;
             }
-
-            ShowNotification(new GUIContent("The script template is saved!"));
         }
 
         private string GetScriptTemplatePath()

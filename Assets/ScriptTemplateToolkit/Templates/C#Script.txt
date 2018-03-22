@@ -13,7 +13,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Developer.Script
+namespace Mogoson.Script
 {
     //[AddComponentMenu("")]
     //[RequireComponent(typeof())]

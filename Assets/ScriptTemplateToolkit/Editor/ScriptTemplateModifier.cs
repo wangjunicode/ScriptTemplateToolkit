@@ -16,7 +16,7 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Developer.ScriptTemplateToolkit
+namespace Mogoson.ScriptTemplateToolkit
 {
     public class ScriptTemplateModifier : UnityEditor.AssetModificationProcessor
     {
