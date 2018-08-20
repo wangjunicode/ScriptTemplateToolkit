@@ -48,9 +48,9 @@
 - The format of copyright statement in the templates reference from the [U.S. Copyright Office](https://www.copyright.gov/).
 
 ## Preview
-- ScriptTemplateEditor.
+- Script Template Editor.
 
-![ScriptTemplateEditor](./Attachments/README_Image/ScriptTemplateEditor.gif)
+![Script Template Editor](./Attachments/README_Image/ScriptTemplateEditor.gif)
 
 ## Contact
 - If you have any questions, feel free to contact me at mogoson@outlook.com.

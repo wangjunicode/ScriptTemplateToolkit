@@ -39,9 +39,9 @@
 - 脚本模板示例中的版权申明参考的是[美国版权局](https://www.copyright.gov/)公示的规范。
 
 ## 预览
-- ScriptTemplateEditor
+- Script Template Editor
 
-![ScriptTemplateEditor](./Attachments/README_Image/ScriptTemplateEditor.gif)
+![Script Template Editor](./Attachments/README_Image/ScriptTemplateEditor.gif)
 
 ## 联系
 - 如果你有任何问题或者建议，欢迎通过mogoson@outlook.com联系我。
