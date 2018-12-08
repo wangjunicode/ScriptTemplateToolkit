@@ -61,7 +61,9 @@ namespace Mogoson.ScriptTemplateToolkit
             EditorGUILayout.LabelField("Text");
             EditorGUILayout.Space();
             if (GUILayout.Button("Save", GUILayout.Width(ButtonWidth)))
+            {
                 SaveScriptTemplate();
+            }
             EditorGUILayout.EndHorizontal();
 
             scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
