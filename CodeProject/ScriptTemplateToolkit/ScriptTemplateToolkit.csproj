@@ -39,15 +39,15 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEditor">
-      <HintPath>..\Librarys\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\Librarys\UnityEngine.dll</HintPath>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
