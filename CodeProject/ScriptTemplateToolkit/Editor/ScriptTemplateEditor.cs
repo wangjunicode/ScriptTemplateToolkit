@@ -21,11 +21,11 @@ namespace Mogoson.ScriptTemplateToolkit
     {
         #region Field and Property
         private static ScriptTemplateEditor instance;
-        private const float ButtonWidth = 60;
-        private const float ScrollViewHeight = 95;
+        private const float BUTTONWIDTH = 60;
+        private const float SCROLLVIEWHEIGHT = 95;
         private Vector2 scrollPosition = Vector2.zero;
 
-        private readonly string templatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
+        private readonly string TemplatesDirectory = EditorApplication.applicationContentsPath + "/Resources/ScriptTemplates";
         private string[] templateFiles = { };
         private string templateText = string.Empty;
         private int templateIndex = 0;
@@ -60,7 +60,7 @@ namespace Mogoson.ScriptTemplateToolkit
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Text");
             EditorGUILayout.Space();
-            if (GUILayout.Button("Save", GUILayout.Width(ButtonWidth)))
+            if (GUILayout.Button("Save", GUILayout.Width(BUTTONWIDTH)))
             {
                 SaveScriptTemplate();
             }
@@ -77,7 +77,7 @@ namespace Mogoson.ScriptTemplateToolkit
         {
             try
             {
-                var searchFiles = Directory.GetFiles(templatesDirectory, "*.txt", SearchOption.AllDirectories);
+                var searchFiles = Directory.GetFiles(TemplatesDirectory, "*.txt", SearchOption.AllDirectories);
                 templateFiles = new string[searchFiles.Length];
                 for (int i = 0; i < templateFiles.Length; i++)
                 {
@@ -118,7 +118,7 @@ namespace Mogoson.ScriptTemplateToolkit
 
         private string GetScriptTemplatePath()
         {
-            return templatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
+            return TemplatesDirectory + "/" + templateFiles[templateIndex] + ".txt";
         }
 
         private void RevertScrollPosition()
