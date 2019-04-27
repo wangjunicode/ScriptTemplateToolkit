@@ -6,3 +6,7 @@
 *.csproj
 *.unityproj
 *.sln
+/.vs
+/CodeProject/.vs
+/UnityProject/.vs
+/CodeProject/ScriptTemplateToolkit/bin
