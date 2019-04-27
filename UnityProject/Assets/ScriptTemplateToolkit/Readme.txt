@@ -1,7 +1,7 @@
 ﻿==========================================================================
-  Copyright © 2017-2018 Mogoson. All rights reserved.
+  Copyright © 2017-2019 Mogoson. All rights reserved.
   Name: ScriptTemplateToolkit
-  Author: Mogoson   Version: 0.1.0   Date: 2/12/2018
+  Author: Mogoson   Version: 1.0.0   Date: 4/27/2019
 ==========================================================================
   [Summary]
     Unity plugin for script template.
@@ -12,7 +12,7 @@
 --------------------------------------------------------------------------
   [Environment]
     Unity 5.0 or above.
-    .Net Framework 3.0 or above.
+    .Net Framework 3.5 or above.
 --------------------------------------------------------------------------
   [Achieve]
     ScriptTemplateEditor : Draw editor window, Read/Edit/Save Unity

@@ -11,7 +11,7 @@
 
 ## Environment
 - Unity 5.0 or above.
-- .Net Framework 3.0 or above.
+- .Net Framework 3.5 or above.
 
 ## Prerequisite
 - In fact, the script templates store under the Unity editor install path,
@@ -34,12 +34,6 @@
   the OnWillCreateAsset(string assetPath) method to capture the event of create
   asset(include script), read the new script text and replace the "#CREATEDATE#" to current
   date and replace the "#COPYRIGHTYEAR#" to current year.
-
-## Achieve
-### Editor
-- ScriptTemplateEditor : Read/Edit/Save script tamplates of Unity engine.
-- ScriptTemplateModifier : Capture the event of create script and replace the mark string
-  to corresponding content.
 
 ### Template
 - Templates in the path "ScriptTemplateToolkit/Templates" provide reference to you to create
