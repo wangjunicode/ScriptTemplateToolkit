@@ -57,7 +57,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>set TargetDir="$(SolutionDir)..\UnityProject\Assets\ScriptTemplateToolkit\Editor"
+    <PostBuildEvent>set TargetDir="$(SolutionDir)..\UnityProject\Assets\$(TargetName)\Editor"
 if not exist %25TargetDir%25 md %25TargetDir%25
 copy "$(TargetFileName)" %25TargetDir%25</PostBuildEvent>
   </PropertyGroup>
