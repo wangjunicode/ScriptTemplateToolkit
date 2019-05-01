@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ScriptTemplateToolkit")]
 [assembly: AssemblyDescription("Toolkit for unity script template")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mogoson")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ScriptTemplateToolkit")]
-[assembly: AssemblyCopyright("Copyright © 2017-2019 Mogoson")]
+[assembly: AssemblyCopyright("Copyright © 2018-2019 Mogoson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
