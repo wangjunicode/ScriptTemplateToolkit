@@ -44,7 +44,7 @@
 ## Preview
 - Script Template Editor.
 
-![Script Template Editor](./Attachments/README_Image/ScriptTemplateEditor.gif)
+![Script Template Editor](./Attachment/README_Image/ScriptTemplateEditor.gif)
 
 ## Contact
 - If you have any questions, feel free to contact me at mogoson@outlook.com.

@@ -36,7 +36,7 @@
 ## 预览
 - Script Template Editor
 
-![Script Template Editor](./Attachments/README_Image/ScriptTemplateEditor.gif)
+![Script Template Editor](./Attachment/README_Image/ScriptTemplateEditor.gif)
 
 ## 联系
 - 如果你有任何问题或者建议，欢迎通过mogoson@outlook.com联系我。
