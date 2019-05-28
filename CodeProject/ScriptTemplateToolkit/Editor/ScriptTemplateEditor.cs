@@ -15,7 +15,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Mogoson.ScriptTemplateToolkit
+namespace MGS.ScriptTemplateToolkit
 {
     public class ScriptTemplateEditor : EditorWindow
     {
