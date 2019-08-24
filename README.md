@@ -1,5 +1,4 @@
 ﻿# ScriptTemplateToolkit
-- [中文手册](./README_ZH.md)
 
 ## Summary
 - Toolkit for Unity editor script templates. 
