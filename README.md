@@ -45,5 +45,9 @@
 
 ![Script Template Editor](./Attachment/README_Image/ScriptTemplateEditor.gif)
 
+## Tips
+- If the notified message is "Access to the path ... is denied." when you save the template,
+   close your Unity and restart it as an administrator.
+
 ## Contact
 - If you have any questions, feel free to contact me at mogoson@outlook.com.

@@ -30,7 +30,9 @@
     the "Text" area.
 
     Reference the [Template], edit the script template to apply your
-    style in the "Text" area and click the "Save" button.
+    style in the "Text" area and click the "Save" button; if the notified
+    message is "Access to the path ... is denied.", close Unity and restart
+    it as an administrator.
 
     ScriptTemplateModifier will be work when a script(example C# Script)
     is created in Unity editor.
